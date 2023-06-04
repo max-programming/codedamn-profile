@@ -1,6 +1,6 @@
 import { BellIcon, Hexagon, LightningIcon } from '@/icons';
 import Image from 'next/image';
-import SearchBox from './Navbar/SearchBox';
+import SearchBox from './SearchBox';
 import Link from 'next/link';
 
 export default function Navbar() {

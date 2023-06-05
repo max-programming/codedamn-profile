@@ -38,7 +38,7 @@ function StatsCard(props: {
 }) {
   return (
     <div className='flex items-center gap-2 rounded-lg border-2 border-border bg-border/50 p-3'>
-      <div className='drop-shadow-[0_0_3em_#000]'>{props.icon}</div>
+      {props.icon}
       <div className='flex flex-col'>
         <h3 className='text-2xl font-bold'>{props.value}</h3>
         <p className='text-secondary'>{props.statType}</p>

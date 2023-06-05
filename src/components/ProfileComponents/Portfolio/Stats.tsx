@@ -1,3 +1,4 @@
+import { Card } from '@/components/ui/Card';
 import { CupIcon, HeartBeatIcon, LightningIcon, StarFourIcon } from '@/icons';
 import { ReactNode } from 'react';
 
@@ -37,12 +38,14 @@ function StatsCard(props: {
   statType: string;
 }) {
   return (
-    <div className='flex items-center gap-2 rounded-lg border-2 border-border bg-border/50 p-3'>
-      {props.icon}
-      <div className='flex flex-col'>
-        <h3 className='text-2xl font-bold'>{props.value}</h3>
-        <p className='text-secondary'>{props.statType}</p>
+    <Card>
+      <div className='flex gap-2'>
+        {props.icon}
+        <div className='flex flex-col'>
+          <h3 className='text-2xl font-bold'>{props.value}</h3>
+          <p className='text-secondary'>{props.statType}</p>
+        </div>
       </div>
-    </div>
+    </Card>
   );
 }

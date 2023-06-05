@@ -1,5 +1,9 @@
 import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
-import { Projects, Stats } from '@/components/ProfileComponents/Portfolio';
+import {
+  Playgrounds,
+  Projects,
+  Stats,
+} from '@/components/ProfileComponents/Portfolio';
 
 export default function Home() {
   return (
@@ -9,6 +13,7 @@ export default function Home() {
         <ProfileTabs />
         <Stats />
         <Projects />
+        <Playgrounds />
       </div>
     </main>
   );

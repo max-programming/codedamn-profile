@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from '@/components/ui/Button';
+import { Card } from '@/components/ui/Card';
 import { Html5Logo, ReactLogo } from '@/icons';
 
 export function Projects() {
   return (
     <div>
-      <div className='flex justify-between'>
+      <div className='mb-2 flex justify-between'>
         <h3 className='mb-5 text-3xl font-bold'>Projects</h3>
         <Button className='font-semibold text-primary hover:bg-border'>
           Create new project
@@ -22,7 +24,7 @@ export function Projects() {
 
 function ProjectCard() {
   return (
-    <div className='flex flex-col justify-center gap-2 rounded-lg border-2 border-border bg-border/50 p-3'>
+    <Card>
       <img src='/screenshot.png' alt='' />
       <h3 className='mt-3 text-2xl font-bold'>Personal Portfolio Website</h3>
       <div className='flex items-center gap-2 text-secondary'>
@@ -31,6 +33,6 @@ function ProjectCard() {
         <ReactLogo />
         React
       </div>
-    </div>
+    </Card>
   );
 }

@@ -42,12 +42,16 @@ export function BellIcon() {
   );
 }
 
-export function Hexagon(props: { className?: string }) {
+export function Hexagon(props: {
+  className?: string;
+  width?: string;
+  height?: string;
+}) {
   return (
     <svg
-      width='54'
-      height='55'
-      viewBox='0 0 54 55'
+      width={props.width || '54'}
+      height={props.height || '55'}
+      viewBox='0 0 55 55'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
@@ -110,6 +114,63 @@ export function Hexagon(props: { className?: string }) {
           <stop offset='1' stop-color='#222023' />
         </radialGradient>
       </defs>
+    </svg>
+  );
+}
+
+export function LocationIcon() {
+  return (
+    <svg
+      width='16'
+      height='16'
+      viewBox='0 0 16 16'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M8.0002 8.95338C9.14895 8.95338 10.0802 8.02213 10.0802 6.87338C10.0802 5.72462 9.14895 4.79338 8.0002 4.79338C6.85145 4.79338 5.9202 5.72462 5.9202 6.87338C5.9202 8.02213 6.85145 8.95338 8.0002 8.95338Z'
+        stroke='#A1A1AA'
+        stroke-width='1.2'
+      />
+      <path
+        d='M2.41353 5.66004C3.72686 -0.113291 12.2802 -0.106624 13.5869 5.66671C14.3535 9.05338 12.2469 11.92 10.4002 13.6934C9.0602 14.9867 6.9402 14.9867 5.59353 13.6934C3.75353 11.92 1.64686 9.04671 2.41353 5.66004Z'
+        stroke='#A1A1AA'
+        stroke-width='1.2'
+      />
+    </svg>
+  );
+}
+
+export function BookmarkIcon() {
+  return (
+    <svg
+      width='16'
+      height='16'
+      viewBox='0 0 16 16'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M8.59332 3.92004H3.40664C2.26664 3.92004 1.33331 4.85337 1.33331 5.99337V13.5667C1.33331 14.5334 2.02664 14.9467 2.87331 14.4734L5.49331 13.0134C5.77331 12.86 6.22665 12.86 6.49998 13.0134L9.11998 14.4734C9.96664 14.9467 10.66 14.5334 10.66 13.5667V5.99337C10.6666 4.85337 9.73332 3.92004 8.59332 3.92004Z'
+        stroke='white'
+        stroke-width='1.5'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+      <path
+        d='M10.6666 5.99337V13.5667C10.6666 14.5334 9.97331 14.94 9.12665 14.4734L6.50665 13.0134C6.22665 12.86 5.77331 12.86 5.49331 13.0134L2.87331 14.4734C2.02664 14.94 1.33331 14.5334 1.33331 13.5667V5.99337C1.33331 4.85337 2.26664 3.92004 3.40664 3.92004H8.59332C9.73332 3.92004 10.6666 4.85337 10.6666 5.99337Z'
+        stroke='#18181B'
+        stroke-width='1.5'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+      <path
+        d='M14.6666 3.4067V10.98C14.6666 11.9467 13.9733 12.3534 13.1266 11.8867L10.6666 10.5134V5.99337C10.6666 4.85337 9.73332 3.92004 8.59332 3.92004H5.33331V3.4067C5.33331 2.2667 6.26664 1.33337 7.40664 1.33337H12.5933C13.7333 1.33337 14.6666 2.2667 14.6666 3.4067Z'
+        stroke='#18181B'
+        stroke-width='1.5'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
     </svg>
   );
 }

@@ -23,8 +23,8 @@ export default function Navbar() {
         </button>
         <button>
           <div className='relative'>
-            <Hexagon className='absolute -right-7 -top-5 w-16 text-white' />
-            <span className='absolute -top-1 right-0 text-sm font-bold text-white'>
+            <Hexagon className='absolute -right-7 -top-5 text-white' />
+            <span className='absolute -right-1 -top-0.5 text-xs font-bold text-white'>
               5
             </span>
           </div>

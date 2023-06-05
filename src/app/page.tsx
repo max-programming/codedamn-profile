@@ -1,5 +1,6 @@
 import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
 import {
+  Certificates,
   Playgrounds,
   Projects,
   Stats,
@@ -14,6 +15,7 @@ export default function Home() {
         <Stats />
         <Projects />
         <Playgrounds />
+        <Certificates />
       </div>
     </main>
   );

@@ -1,5 +1,5 @@
 import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
-import { Stats } from '@/components/ProfileComponents/Portfolio';
+import { Projects, Stats } from '@/components/ProfileComponents/Portfolio';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <ProfileCard />
         <ProfileTabs />
         <Stats />
+        <Projects />
       </div>
     </main>
   );

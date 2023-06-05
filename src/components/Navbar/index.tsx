@@ -11,7 +11,7 @@ export default function Navbar() {
       </Link>
       <div className='flex items-center justify-between gap-5'>
         <SearchBox />
-        <button className='flex items-center gap-1'>
+        <button className='flex items-center'>
           <LightningIcon />
           <h2 className='font-bold text-secondary'>2</h2>
         </button>

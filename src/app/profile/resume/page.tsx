@@ -1,5 +1,12 @@
 import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
-import { About, Education, Work } from '@/components/ProfileComponents/Resume';
+import {
+  About,
+  Education,
+  Interests,
+  Languages,
+  Skills,
+  Work,
+} from '@/components/ProfileComponents/Resume';
 
 export default function Home() {
   return (
@@ -9,6 +16,9 @@ export default function Home() {
       <About />
       <Work />
       <Education />
+      <Skills />
+      <Interests />
+      <Languages />
     </div>
   );
 }

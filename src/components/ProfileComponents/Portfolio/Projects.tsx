@@ -6,7 +6,7 @@ import { Html5Logo, ReactLogo } from '@/icons';
 export function Projects() {
   return (
     <div>
-      <div className='mb-2 flex justify-between'>
+      <div className='mb-2 flex items-center justify-between'>
         <h3 className='mb-5 text-3xl font-bold'>Projects</h3>
         <Button className='font-semibold text-primary hover:bg-border'>
           Create new project

@@ -3,6 +3,7 @@ import Badge from '../ui/Badge';
 import { SocialIcon } from './SocialIcon';
 import Button from '../ui/Button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const technologies = [
   'HTML 5',
@@ -81,6 +82,11 @@ export function ProfileCard() {
               <Button className='bg-primary font-semibold text-white'>
                 Contact
               </Button>
+              <Link href='/profile/edit'>
+                <Button className='bg-secondary font-semibold text-white'>
+                  Edit Profile
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/ui/Navbar';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { PropsWithChildren } from 'react';
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang='en'>
       <body className={inter.className}>
         <Navbar />
-        <main className='container mx-auto my-5 max-w-screen-lg'>
+        <main className='container mx-auto my-5 h-full max-w-screen-lg'>
           {children}
         </main>
       </body>

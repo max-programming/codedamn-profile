@@ -27,7 +27,7 @@ function ProjectCard() {
     <Card>
       <img src='/screenshot.png' alt='' />
       <h3 className='mt-3 text-2xl font-bold'>Personal Portfolio Website</h3>
-      <div className='flex items-center gap-2 text-secondary'>
+      <div className='md:text-md flex items-center gap-2 text-xs text-secondary'>
         <Html5Logo />
         HTML/CSS •
         <ReactLogo />

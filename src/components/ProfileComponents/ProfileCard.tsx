@@ -66,7 +66,7 @@ export function ProfileCard() {
             ))}
           </div>
           <div className='my-10 h-px bg-border' />
-          <div className='flex items-center justify-between'>
+          <div className='flex flex-col items-start justify-between gap-3 md:flex-row md:items-center md:gap-0'>
             <div className='flex gap-4'>
               <SocialIcon icon='google' href='https://google.com' />
               <SocialIcon icon='instagram' href='https://instagram.com' />

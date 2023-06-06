@@ -33,21 +33,17 @@ function PlaygroundCard(props: PlaygroundCardProps) {
           <p className='text-secondary'>
             {props.playground.tech} • {props.playground.timeago} ago
           </p>
-          <div className='flex space-x-3'>
+          <div className='flex flex-col items-start md:flex-row md:items-center md:space-x-3'>
             <div className='flex -space-x-2'>
               <img
                 src='/profile2.png'
                 alt=''
-                className='rounded-full'
-                width={24}
-                height={24}
+                className='h-10 w-10 rounded-full'
               />
               <img
                 src='/profile.jpeg'
                 alt=''
-                className='rounded-full'
-                width={24}
-                height={24}
+                className='h-10 w-10 rounded-full'
               />
             </div>
             <p className='text-secondary'>

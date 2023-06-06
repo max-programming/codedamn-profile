@@ -1,5 +1,5 @@
 import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
-import { About, Work } from '@/components/ProfileComponents/Resume';
+import { About, Education, Work } from '@/components/ProfileComponents/Resume';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <ProfileTabs />
       <About />
       <Work />
+      <Education />
     </div>
   );
 }

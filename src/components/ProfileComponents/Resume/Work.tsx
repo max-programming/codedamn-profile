@@ -31,6 +31,18 @@ function WorkExperience({ work }: WorkExperienceProps) {
           <p className='font-bold text-primary-black'>{work.period}</p>
         </div>
         <p className='mt-3 text-secondary'>{work.description}</p>
+        {work.responsibilities && (
+          <div className='mt-3'>
+            <h4 className='text-xl font-bold'>Job responsibilities:</h4>
+            <ul className='ml-5 mt-3 list-image-[url(/bullet.svg)]'>
+              {work.responsibilities.map((responsibility, index) => (
+                <li key={index} className='mt-2 text-secondary'>
+                  {responsibility}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -52,6 +64,11 @@ const workExps: WorkExp[] = [
     location: 'New York',
     period: 'July 2020 - May 2021',
     description: `This role would be great for a web developer with 3+ years' experience in designing and developing responsive websites.`,
+    responsibilities: [
+      'Create an appealing design and turn it into a WordPress plugin',
+      'Manage all technical aspects of the CMS',
+      'Conducting website/application tests',
+    ],
   },
 ];
 
@@ -66,4 +83,5 @@ interface WorkExp {
   location: string;
   period: string;
   description: string;
+  responsibilities?: string[];
 }

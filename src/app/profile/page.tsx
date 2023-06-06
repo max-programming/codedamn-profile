@@ -1,4 +1,3 @@
-import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
 import {
   Certificates,
   Playgrounds,
@@ -8,13 +7,11 @@ import {
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-10'>
-      <ProfileCard />
-      <ProfileTabs />
+    <>
       <Stats />
       <Projects />
       <Playgrounds />
       <Certificates />
-    </div>
+    </>
   );
 }

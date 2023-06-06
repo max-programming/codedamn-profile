@@ -15,6 +15,7 @@ export function Sidebar() {
         <ul className='flex flex-col items-start justify-start space-y-7'>
           <SidebarItem
             isActive={pathname === '/profile/edit'}
+            href='/profile/edit'
             label='Profile'
           />
           <SidebarItem
@@ -40,11 +41,9 @@ function SidebarItem(props: SidebarItemProps) {
   const isHover = useHover(hoverRef);
 
   return (
-    <li>
+    <li className='w-full'>
       <Link
-        href={
-          props.isActive ? '#' : `/profile/edit/${props.label.toLowerCase()}`
-        }
+        href={props.href ?? `/profile/edit/${props.label.toLowerCase()}`}
         ref={hoverRef}
       >
         <div className='relative flex items-center gap-5 px-5'>
@@ -71,4 +70,5 @@ function SidebarItem(props: SidebarItemProps) {
 type SidebarItemProps = {
   isActive: boolean;
   label: string;
+  href?: string;
 };

@@ -4,6 +4,7 @@ import { SocialIcon } from './SocialIcon';
 import Button from '../ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { HiPencilAlt } from 'react-icons/hi';
 
 const technologies = [
   'HTML 5',
@@ -19,7 +20,16 @@ const technologies = [
 export function ProfileCard() {
   return (
     <div className='h-1/2 rounded-2xl border-2'>
-      <div className='h-[15vh] w-full rounded-t-2xl bg-gradient' />
+      <div className='flex h-[15vh] w-full items-start justify-end rounded-t-2xl bg-gradient p-3'>
+        <Link href='/profile/edit'>
+          <div className='rounded-lg bg-gradient-to-bl from-[#F4F4F51F] to-[#F4F4F552] p-[2px]'>
+            <Button className='flex h-full w-full items-center gap-3 rounded-lg bg-white/0 text-white backdrop-blur-lg'>
+              <HiPencilAlt />
+              Edit cover
+            </Button>
+          </div>
+        </Link>
+      </div>
       <div className='flex gap-10 p-5'>
         <div className='relative -top-20'>
           <Image

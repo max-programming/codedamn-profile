@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 type SocialIconProps = {
   icon: string;
   href: string;

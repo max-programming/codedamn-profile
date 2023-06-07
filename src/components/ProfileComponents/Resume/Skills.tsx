@@ -14,7 +14,6 @@ import {
   ReactLogo,
 } from '@/icons';
 
-/* eslint-disable @next/next/no-img-element */
 export function Skills() {
   return (
     <div>

@@ -16,7 +16,7 @@ export function Playgrounds(props: { isEditing?: boolean }) {
         </Button>
       </div>
 
-      <PlaygroundCards />
+      <PlaygroundCards isEditing={props.isEditing} />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { Radio } from 'flowbite-react';
@@ -8,11 +7,7 @@ import { Card } from '@/components/ui/Card';
 
 import { Html5Logo, JSLogo } from '@/icons';
 
-/* eslint-disable @next/next/no-img-element */
-
-/* eslint-disable @next/next/no-img-element */
-
-export function PlaygroundCards() {
+export function PlaygroundCards(props: { isEditing?: boolean }) {
   const [selected, setSelected] = useState(0);
 
   return (
@@ -24,6 +19,7 @@ export function PlaygroundCards() {
           idx={idx}
           isSelected={idx === selected}
           setSelected={setSelected}
+          isEditing={props.isEditing}
         />
       ))}
     </div>
@@ -34,15 +30,17 @@ function PlaygroundCard(props: PlaygroundCardProps) {
   return (
     <Card
       className={`relative ${
-        props.isSelected && 'border-primary bg-primary/5'
+        props.isEditing && props.isSelected && 'border-primary bg-primary/5'
       }`}
     >
-      <Radio
-        className='absolute right-5 top-5'
-        name='playground'
-        onChange={() => props.setSelected(props.idx)}
-        defaultChecked={props.isSelected}
-      />
+      {props.isEditing && (
+        <Radio
+          className='absolute right-5 top-5'
+          name='playground'
+          onChange={() => props.setSelected(props.idx)}
+          defaultChecked={props.isSelected}
+        />
+      )}
       <div className='flex gap-4'>
         {props.playground.logo}
         <div className='flex flex-col gap-2'>
@@ -113,4 +111,5 @@ type PlaygroundCardProps = {
   isSelected?: boolean;
   idx: number;
   setSelected: Dispatch<SetStateAction<number>>;
+  isEditing?: boolean;
 };

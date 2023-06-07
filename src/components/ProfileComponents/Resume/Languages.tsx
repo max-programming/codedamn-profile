@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Badge from '@/components/ui/Badge';
 
 export function Languages() {

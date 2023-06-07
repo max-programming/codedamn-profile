@@ -1,7 +1,9 @@
-import Navbar from '@/components/ui/Navbar';
-import './globals.css';
 import { Inter } from 'next/font/google';
 import { PropsWithChildren } from 'react';
+
+import Navbar from '@/components/ui/Navbar';
+
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

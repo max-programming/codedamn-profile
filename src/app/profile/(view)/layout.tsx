@@ -1,5 +1,6 @@
-import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
 import { PropsWithChildren } from 'react';
+
+import { ProfileCard, ProfileTabs } from '@/components/ProfileComponents';
 
 export default function ProfileLayout({ children }: PropsWithChildren) {
   return (

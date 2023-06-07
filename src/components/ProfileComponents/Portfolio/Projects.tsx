@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
+
 import { Html5Logo, ReactLogo } from '@/icons';
 
 export function Projects() {

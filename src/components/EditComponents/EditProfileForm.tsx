@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 import Button from '../ui/Button';
 import { Card } from '../ui/Card';
 import { Input } from '../ui/Input';

@@ -1,10 +1,12 @@
-import { BookmarkIcon, Hexagon, LocationIcon } from '@/icons';
-import Badge from '../ui/Badge';
-import { SocialIcon } from './SocialIcon';
-import Button from '../ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiPencilAlt } from 'react-icons/hi';
+
+import { BookmarkIcon, Hexagon, LocationIcon } from '@/icons';
+
+import Badge from '../ui/Badge';
+import Button from '../ui/Button';
+import { SocialIcon } from './SocialIcon';
 
 const technologies = [
   'HTML 5',

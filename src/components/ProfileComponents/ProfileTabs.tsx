@@ -1,7 +1,9 @@
 'use client';
+
 import Link from 'next/link';
-import Button from '../ui/Button';
 import { usePathname } from 'next/navigation';
+
+import Button from '../ui/Button';
 
 export function ProfileTabs() {
   const pathname = usePathname();

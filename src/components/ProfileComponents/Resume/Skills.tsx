@@ -1,4 +1,7 @@
+import { ComponentType } from 'react';
+
 import Badge from '@/components/ui/Badge';
+
 import {
   Css3Logo,
   Html5Logo,
@@ -10,7 +13,6 @@ import {
   PythonLogo,
   ReactLogo,
 } from '@/icons';
-import { ComponentType } from 'react';
 
 /* eslint-disable @next/next/no-img-element */
 export function Skills() {

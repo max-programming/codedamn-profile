@@ -1,9 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { Card } from '@/components/ui/Card';
+
 import { Radio } from 'flowbite-react';
 import { Dispatch, ReactNode, SetStateAction, useState } from 'react';
+
+import { Card } from '@/components/ui/Card';
+
 import { Html5Logo, JSLogo } from '@/icons';
+
+/* eslint-disable @next/next/no-img-element */
+
+/* eslint-disable @next/next/no-img-element */
 
 export function PlaygroundCards() {
   const [selected, setSelected] = useState(0);

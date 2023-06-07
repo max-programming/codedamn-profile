@@ -1,6 +1,8 @@
-import { Card } from '@/components/ui/Card';
-import { CupIcon, HeartBeatIcon, LightningIcon, StarFourIcon } from '@/icons';
 import { ReactNode } from 'react';
+
+import { Card } from '@/components/ui/Card';
+
+import { CupIcon, HeartBeatIcon, LightningIcon, StarFourIcon } from '@/icons';
 
 export function Stats() {
   return (

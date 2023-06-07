@@ -1,10 +1,13 @@
 'use client';
-import { SidebarIcon, SidebarInactiveIcon } from '@/icons';
-import { Card } from './Card';
-import { usePathname } from 'next/navigation';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useRef } from 'react';
 import { useHover } from 'usehooks-ts';
+
+import { SidebarIcon, SidebarInactiveIcon } from '@/icons';
+
+import { Card } from './Card';
 
 export function Sidebar() {
   const pathname = usePathname();

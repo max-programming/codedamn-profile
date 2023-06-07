@@ -1,4 +1,5 @@
-import { HiSearch, HiChevronDown } from 'react-icons/hi';
+import { HiChevronDown, HiSearch } from 'react-icons/hi';
+
 import { Input } from '../Input';
 
 export default function SearchBox() {

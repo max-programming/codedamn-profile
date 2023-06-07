@@ -1,6 +1,7 @@
+import { PropsWithChildren } from 'react';
+
 import Button from '@/components/ui/Button';
 import { Sidebar } from '@/components/ui/Sidebar';
-import { PropsWithChildren } from 'react';
 
 export default function EditLayout({ children }: PropsWithChildren) {
   return (

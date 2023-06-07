@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
+
+import { setServers } from 'dns';
 import { Dispatch, SetStateAction, useState } from 'react';
+import { HiDotsHorizontal } from 'react-icons/hi';
+
 import Button from '../ui/Button';
 import { Card } from '../ui/Card';
-import { HiDotsHorizontal } from 'react-icons/hi';
-import { setServers } from 'dns';
+
+/* eslint-disable @next/next/no-img-element */
+
+/* eslint-disable @next/next/no-img-element */
 
 export function EditProjects() {
   const [selected, setSelected] = useState(0);

@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { ReactNode } from 'react';
+
 import Button from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
+
 import { AchievementsIcon, Html5Logo, JSLogo, ReactLogo } from '@/icons';
-import { ReactNode } from 'react';
 
 export function Certificates() {
   return (
